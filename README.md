@@ -59,4 +59,6 @@ Tests are not written because it gets bigger.
 
 Security is too simple and it can not be used in production.
 
+Postman is not automized.
+
 
