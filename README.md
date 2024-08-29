@@ -53,3 +53,10 @@ Customer has TRY amount and Employee or himself/herself can deposit or withdraw 
 4- JWT Filter checks jwt token and security validates it.
 
 
+# Missing Points
+
+Tests are not written because it gets bigger.
+
+Security is too simple and it can not be used in production.
+
+
