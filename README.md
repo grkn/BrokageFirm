@@ -32,11 +32,11 @@ Admin has special access for some endpoint unlike customer.
 
 Simple JWT token is used for authorization and authentication.
 
-There is a order scheduler job which behaves like master-slave. Only one instance can complete 50 orders and others are waiting it for end it. I used pessimistic lock in database to avoid other tools.
+There is an order scheduler job which behaves like master-slave. Only one instance can complete 50 orders and others are waiting it for end it. I used pessimistic lock in database to avoid other tools.
 
 ### Internal
 
-User orders a asset and this order is stored in h2 database. After storing it, scheduler job gets pending orders. Checks validations and simply try to finish it(There is a retry mechanism to avoid some errors)
+User orders an asset and this order is stored in h2 database. After storing it, scheduler job gets pending orders. Checks validations and simply try to finish it(There is a retry mechanism to avoid some errors)
 
 If it is completed status is MATCHED otherwise it is CANCELED.
 
